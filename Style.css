@@ -24,3 +24,22 @@ footer{
     font-size: 20;
     color: black;
 }
+
+#box01{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid;
+    margin: 20px;
+    border-color: green;
+    position:absolute/right;
+    margin-left:auto;
+}
+
+@media screen and (min-width: 720px) /*indica que cuando la pantalla es mas grande que... haz esto*/
+{
+   #box01{
+    width:200px;
+    height:200px;
+   }
+}
