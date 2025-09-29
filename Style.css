@@ -36,6 +36,20 @@ footer{
     margin-left:auto;
 }
 
+#box02
+{
+    display:flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    justify-content: space-between; 
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border: 10px solid;
+    margin: 50px;    
+}
+
+
 @media screen and (min-width: 720px) /*indica que cuando la pantalla es mas grande que... haz esto*/
 {
    #box01{
