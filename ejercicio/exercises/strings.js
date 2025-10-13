@@ -23,3 +23,12 @@ stringIndex = "buenas tardes";
 indice = stringIndex.indexOf(" ");
 console.log("Ubicacion del indice: ",indice);
 
+var stringTotal,stringPrincipio,stringEspacio,stringFinal,stringPrimeraPalabra;
+stringTotal = "cohete espacial";
+stringPrincipio = stringTotal.substring(0,1); // c
+stringEspacio = stringTotal.indexOf(" ");  // index del espacio (el numero)
+String.prototype.toUpperCase(stringPrincipio); // C
+stringPrimeraPalabra = stringPrincipio + stringTotal.substring(1,stringEspacio); // C + ohete
+stringFinal = stringTotal.substring(stringEspacio,stringEspacio + 1); // e
+String.prototype.toUpperCase(stringFinal);
+console.log(stringPrincipio + stringFinal);

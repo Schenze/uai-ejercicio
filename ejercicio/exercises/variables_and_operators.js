@@ -10,3 +10,9 @@ texto2 = "Worlds!!!";
 sumadetexto = texto1 + texto2;
 console.log("sumadetexto");
 
+var string1,string2,stringtotal;
+string1 = "Hola mundo";
+string2 = "Hello world";
+stringtotal = string1 + string2;
+stringtotal = stringtotal.length;
+console.log("stringtotal");

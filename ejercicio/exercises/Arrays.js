@@ -18,4 +18,4 @@ console.log(arrayReverse);
 
 console.log(arrayMeses.join("-"));
 
-
+console.log(arrayMeses.slice(4,11));
