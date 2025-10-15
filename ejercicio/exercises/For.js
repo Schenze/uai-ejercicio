@@ -19,3 +19,19 @@ for (i=0;i<arrayFor.length();i++)
 {
     console.log(MayusFunction(arrayFor[i]));
 }
+
+var sentence = "";
+
+for (i=0; i < arrayFor.length();i++)
+{
+    sentence = sentence + arrayFor.indexOf(i);
+}
+console.log(sentence);
+
+var arrayVacio = [];
+
+for(i=0; i < 10;i++)
+{
+    arrayVacio.push(i);
+}
+console.log("El array es: ",arrayVacio);
