@@ -27,55 +27,57 @@ const ValidacionForm = (e) =>
     postalcodes = document.getElementById("labelpostalcode");
     dnis = document.getElementById("labeldni");
 
+    console.log("primera instancia de:",e.target.name);
+
     switch (e.target.name)
     {
         case "name":
             if(Expresiones.name.test(e.target.value))
             {
-                names.setAttribute("style", "color: greenyellow;");
+                names.style.color = "greenyellow";
             }else
             {
-                names.setAttribute("style", "color: red;");
+                names.style.color = "red";
             }
          break;
 
             case "email":
             if(Expresiones.email.test(e.target.value))
             {
-                emails.setAttribute("style", "color: greenyellow;");
+                emails.style.color = "greenyellow";
             }else
             {
-                emails.setAttribute("style", "color: red;");
+                emails.style.color = "red";
             }
          break;
 
             case "password":
             if(Expresiones.passwords.test(e.target.value))
             {
-                passwords.setAttribute("style", "color: greenyellow;");
+                passwords.style.color = "greenyellow";
             }else
             {
-                passwords.setAttribute("style", "color: red;");
+                passwords.style.color = "red";
             }
          break;
 
             case "age":
             if(Expresiones.ages.test(e.target.value))
             {
-                ages.setAttribute("style", "color: greenyellow;");
+                ages.style.color = "greenyellow";
             }else
             {
-                ages.setAttribute("style", "color: red;");
+                ages.style.color = "red";
             }
          break;
 
             case "phone":
             if(Expresiones.phones.test(e.target.value))
             {
-                phones.setAttribute("style", "color: greenyellow;");
+                phones.style.color = "greenyellow";
             }else
             {
-                phones.setAttribute("style", "color: red;");
+                phones.style.color = "red";
             }
          break;
 
@@ -83,43 +85,44 @@ const ValidacionForm = (e) =>
 
             if(Expresiones.directions.test(e.target.value))
             {
-                directions.setAttribute("style", "color: greenyellow;");
+                directions.style.color = "greenyellow";
             }else
             {
-                directions.setAttribute("style", "color: red;");
+                directions.style.color = "red";
             }
          break;
 
             case "city":
             if(Expresiones.cities.test(e.target.value))
             {
-                cities.setAttribute("style", "color: greenyellow;");
+                cities.style.color = "greenyellow";
             }else
             {
-                cities.setAttribute("style", "color: red;");
+                cities.style.color = "red";
             }
          break;
 
             case "postalcode":
             if(Expresiones.postalcodes.test(e.target.value))
             {
-                postalcodes.setAttribute("style", "color: greenyellow;");
+                postalcodes.style.color = "greenyellow";
             }else
             {
-                postalcodes.setAttribute("style", "color: red;");
+                postalcodes.style.color = "red";
             }
          break;
 
             case "dni":
             if(Expresiones.dnis.test(e.target.value))
             {
-                dnis.setAttribute("style", "color: greenyellow;");
+                dnis.style.color = "greenyellow";
             }else
             {
-                dnis.setAttribute("style", "color: red;");
+                dnis.style.color = "red";
             }
          break;
     }
+    console.log("segunda instancia de:",e.target.name);
 }   // no anda ? porque ???
 
 inputs.forEach((input) => {
