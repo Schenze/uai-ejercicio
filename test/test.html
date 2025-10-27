@@ -4,7 +4,7 @@
     <head>
     <link rel="stylesheet" href="normalize2.css">
     <link rel="stylesheet" href="style2.css">
-    <script async src="script2.js"></script>
+    <script defer src="./script2.js"></script>
     </head>
 
     <header id="HeaderPrincipal">
@@ -111,12 +111,12 @@
         <input id="dni" name="dni" type="text">
         </div>
         <div>
-        <label for="gender">Sexo</label> <br>
+        <label for="gender" id="labelgender">Sexo</label> <br>
         <input type="radio" name="genero" value="masculino"> Masculino <br>
         <input type="radio" name="genero" value="femenino"> Femenino
         </div>
         <div>
-            <label>Pais de recidencia: </label>
+            <label for="country" id="labelcountry">Pais de recidencia: </label>
             <select name="country"> 
                 <option value="AR">Argentina</option>
                 <option value="BR">Brasil</option>

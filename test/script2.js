@@ -1,7 +1,8 @@
 const Formulario = document.getElementById("FormComentario");
 const Inputs = document.querySelectorAll("FormComentario input");
 
-const Expresiones = {
+const Expresiones
+ = {
     name: /^(?=.{6,}$)[a-zA-Z]+( [a-zA-Z]+)+$/,
     //(?=.{6,}$) Asegura que el string sea minimo de 6 caracteres
     //[a-zA-Z]+ Primer nombre solo letras
@@ -12,10 +13,10 @@ const Expresiones = {
     direction: /^[a-zA-Z0-9 ]{5,}$/,
     city: /^[a-zA-Z0-9 ]{3,}$/,
     postalcode: /^[a-zA-Z0-9 ]{3,}$/,
-    dni: /^[0-9]+{0,8}$/,
+    dni: /^[0-9]{0,8}$/,
 }
 
-const ValidacionForm = (e) =>
+function ValidacionForm(e)
 {
     names = document.getElementById("labelname");
     emails = document.getElementById("labelemail");
@@ -125,7 +126,7 @@ const ValidacionForm = (e) =>
     console.log("segunda instancia de:",e.target.name);
 }   // no anda ? porque ???
 
-inputs.forEach((input) => {
+Inputs.forEach((input) => {
     input.addEventlistener('keyup',ValidacionForm);
     input.addEventlistener('blur',ValidacionForm);
 });
